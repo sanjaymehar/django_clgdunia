@@ -1,0 +1,29 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div><a href="{% url 'addata' %}"><h2>add data</h2></a></div>
+    <img src="/static/Manufacturer_data.png" alt="Manufacturer_data" width="800" height="800">
+   <h1>Manufacturer Data</h1> 
+    <img src="/static/Manufacturer_data_bar.png" alt="Manufacturer_data_bar" width="1500" height="800">
+    
+    <img src="/static/top5_Fuel_capacity car.png" alt="Manufacturer_data_bar" width="800" height="700">
+
+    <img src="/static/bottom5_Fuel_capacity car.png" alt="Manufacturer_data_bar" width="800" height="700">
+
+    <img src="/static/top5_Fuel_efficiency car.png" alt="Manufacturer_data_bar" width="800" height="700">
+
+    <img src="/static/bottom5_Fuel_efficiency car.png" alt="Manufacturer_data_bar" width="800" height="700">
+
+    <h1>Most expensive car is {{expensive_car.0}} of Rupess in lakh {{expensive_car.1}} .Company is {{expensive_car.2}}</h1>
+    <h1>Most Economical car is {{cheap_car.0}} of Rupess in lakh {{cheap_car.1}} .Company is {{cheap_car.2}}</h1>
+
+  </body>
+</html>
